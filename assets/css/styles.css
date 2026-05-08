@@ -1,0 +1,36 @@
+:root {
+  --brand-color: #0a58ca;
+}
+
+body {
+  padding-top: 76px;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.hero {
+  background: linear-gradient(120deg, #ffffff 0%, #eef4ff 100%);
+  border: 1px solid #e9ecef;
+  border-radius: 0.75rem;
+  padding: 3rem;
+}
+
+.page-panel {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.section-title {
+  color: var(--brand-color);
+  margin-bottom: 1rem;
+}
