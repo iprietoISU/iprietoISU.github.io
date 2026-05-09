@@ -1,0 +1,6 @@
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+exclude:
+  - assets/css/styles.css

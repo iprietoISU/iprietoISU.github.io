@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Presentation preview placeholder</title>
+  <desc id="desc">A dark presentation slide placeholder for the Argonne SULI internship section.</desc>
+  <rect width="960" height="540" fill="#22252b"/>
+  <rect x="64" y="60" width="832" height="420" rx="18" fill="#30343c" stroke="#5b6472" stroke-width="3"/>
+  <rect x="112" y="112" width="440" height="26" rx="13" fill="#8fb8ff"/>
+  <rect x="112" y="168" width="608" height="16" rx="8" fill="#c8ced8" opacity=".86"/>
+  <rect x="112" y="204" width="512" height="16" rx="8" fill="#c8ced8" opacity=".68"/>
+  <rect x="112" y="240" width="648" height="16" rx="8" fill="#c8ced8" opacity=".56"/>
+  <rect x="112" y="326" width="176" height="88" rx="10" fill="#3e4450" stroke="#8fb8ff" stroke-width="2"/>
+  <rect x="328" y="326" width="176" height="88" rx="10" fill="#3e4450" stroke="#8fb8ff" stroke-width="2"/>
+  <rect x="544" y="326" width="176" height="88" rx="10" fill="#3e4450" stroke="#8fb8ff" stroke-width="2"/>
+  <text x="112" y="454" fill="#e6e8eb" font-family="Arial, sans-serif" font-size="24">Argonne SULI Presentation</text>
+</svg>

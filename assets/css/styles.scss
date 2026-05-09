@@ -1,27 +1,45 @@
+---
+---
+
+$portfolio-primary: #9ec5fe;
+$portfolio-bg: #24272c;
+$portfolio-panel: #30343b;
+$portfolio-panel-soft: #3a3f48;
+$portfolio-text: #e9ecef;
+$portfolio-muted: #c3c8d0;
+$portfolio-border: #535b66;
+$portfolio-link: #b6d4fe;
+$portfolio-link-hover: #d9e9ff;
+$resume-paper: #f4f5f7;
+$resume-ink: #17191d;
+$resume-muted: #343842;
+$resume-rule: #c7ccd4;
+
 :root,
 [data-bs-theme="dark"] {
-  --brand-color: #9ec5fe;
-  --portfolio-panel: #30343b;
-  --portfolio-panel-soft: #3a3f48;
-  --bs-body-bg: #24272c;
+  --brand-color: #{$portfolio-primary};
+  --portfolio-panel: #{$portfolio-panel};
+  --portfolio-panel-soft: #{$portfolio-panel-soft};
+
+  --bs-body-bg: #{$portfolio-bg};
   --bs-body-bg-rgb: 36, 39, 44;
-  --bs-body-color: #e9ecef;
+  --bs-body-color: #{$portfolio-text};
   --bs-body-color-rgb: 233, 236, 239;
-  --bs-secondary-color: #c3c8d0;
+  --bs-secondary-color: #{$portfolio-muted};
   --bs-secondary-color-rgb: 195, 200, 208;
-  --bs-secondary-bg: #30343b;
+  --bs-secondary-bg: #{$portfolio-panel};
   --bs-secondary-bg-rgb: 48, 52, 59;
-  --bs-tertiary-bg: #3a3f48;
+  --bs-tertiary-bg: #{$portfolio-panel-soft};
   --bs-tertiary-bg-rgb: 58, 63, 72;
   --bs-emphasis-color: #f8f9fa;
   --bs-emphasis-color-rgb: 248, 249, 250;
-  --bs-border-color: #535b66;
+  --bs-border-color: #{$portfolio-border};
   --bs-border-color-rgb: 83, 91, 102;
-  --bs-link-color: #b6d4fe;
+  --bs-link-color: #{$portfolio-link};
   --bs-link-color-rgb: 182, 212, 254;
-  --bs-link-hover-color: #d9e9ff;
+  --bs-link-hover-color: #{$portfolio-link-hover};
   --bs-link-hover-color-rgb: 217, 233, 255;
-  --bs-primary: #9ec5fe;
+  --bs-primary: #{$portfolio-primary};
   --bs-primary-rgb: 158, 197, 254;
   --bs-primary-bg-subtle: #1e344f;
   --bs-primary-border-subtle: #4c78b1;
@@ -44,11 +62,11 @@ body {
 
 a {
   color: var(--bs-link-color);
-}
 
-a:hover,
-a:focus {
-  color: var(--bs-link-hover-color);
+  &:hover,
+  &:focus {
+    color: var(--bs-link-hover-color);
+  }
 }
 
 .navbar-brand {
@@ -83,18 +101,18 @@ a:focus {
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
   color: var(--bs-secondary-color);
-}
 
-.contact-strip a,
-.contact-strip span {
-  border-right: 1px solid var(--bs-border-color);
-  padding-right: 1rem;
-}
+  a,
+  span {
+    border-right: 1px solid var(--bs-border-color);
+    padding-right: 1rem;
+  }
 
-.contact-strip a:last-child,
-.contact-strip span:last-child {
-  border-right: 0;
-  padding-right: 0;
+  a:last-child,
+  span:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
 }
 
 .page-panel,
@@ -126,23 +144,23 @@ a:focus {
   border-top: 1px solid var(--bs-border-color);
   margin-top: 2rem;
   padding-top: 2rem;
-}
 
-.entry-block h2 {
-  color: var(--bs-emphasis-color);
-  font-size: 1.45rem;
-  margin-bottom: 1rem;
-}
+  h2 {
+    color: var(--bs-emphasis-color);
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+  }
 
-.entry-block h3 {
-  color: var(--brand-color);
-  font-size: 1rem;
-  margin-top: 1.25rem;
-  text-transform: uppercase;
-}
+  h3 {
+    color: var(--brand-color);
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+  }
 
-.entry-block p {
-  color: var(--bs-secondary-color);
+  p {
+    color: var(--bs-secondary-color);
+  }
 }
 
 .project-subsection {
@@ -151,23 +169,23 @@ a:focus {
   border-radius: 0.5rem;
   margin-top: 1.25rem;
   padding: 1.25rem;
-}
 
-.project-subsection h3 {
-  color: var(--bs-emphasis-color);
-  font-size: 1.2rem;
-  margin-top: 0;
-}
+  h3 {
+    color: var(--bs-emphasis-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
 
-.project-subsection h4 {
-  color: var(--brand-color);
-  font-size: 1rem;
-  margin-top: 1.25rem;
-  text-transform: uppercase;
-}
+  h4 {
+    color: var(--brand-color);
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+  }
 
-.project-subsection p {
-  color: var(--bs-secondary-color);
+  p {
+    color: var(--bs-secondary-color);
+  }
 }
 
 .presentation-grid {
@@ -179,11 +197,11 @@ a:focus {
   gap: 1.25rem;
   grid-template-columns: minmax(180px, 280px) 1fr;
   padding: 1rem;
-}
 
-.presentation-grid img {
-  border-radius: 0.35rem;
-  max-width: 100%;
+  img {
+    border-radius: 0.35rem;
+    max-width: 100%;
+  }
 }
 
 .link-list {
@@ -191,78 +209,78 @@ a:focus {
 }
 
 .resume-sheet {
-  background-color: #f4f5f7;
-  color: #17191d;
+  background-color: $resume-paper;
+  color: $resume-ink;
   font-family: Georgia, "Times New Roman", serif;
 }
 
 .resume-header {
-  border-bottom: 2px solid #17191d;
+  border-bottom: 2px solid $resume-ink;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   text-align: center;
-}
 
-.resume-header h1 {
-  font-size: 2rem;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+  }
 }
 
 .resume-header p,
 .resume-section p,
 .resume-section li {
-  color: #343842;
+  color: $resume-muted;
 }
 
 .resume-section {
-  border-bottom: 1px solid #c7ccd4;
+  border-bottom: 1px solid $resume-rule;
   margin-bottom: 1.25rem;
   padding-bottom: 1rem;
-}
 
-.resume-section:last-child {
-  border-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-.resume-section h2 {
-  color: #111318;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
+  h2 {
+    color: #111318;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
 }
 
 .resume-item {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-}
 
-.resume-item h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.15rem;
-}
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+  }
 
-.resume-item p,
-.resume-item span {
-  font-style: italic;
-  margin-bottom: 0.35rem;
+  p,
+  span {
+    font-style: italic;
+    margin-bottom: 0.35rem;
+  }
 }
 
 @media (max-width: 767.98px) {
   .presentation-grid {
     display: block;
     grid-template-columns: 1fr;
-  }
 
-  .presentation-grid img {
-    margin-bottom: 1rem;
+    img {
+      margin-bottom: 1rem;
+    }
   }
 
   .resume-item {
