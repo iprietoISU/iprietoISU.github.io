@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A professional portrait placeholder for the homepage.</desc>
+  <rect width="720" height="900" fill="#30343b"/>
+  <circle cx="360" cy="300" r="132" fill="#9ec5fe" opacity=".9"/>
+  <path d="M160 790c18-160 104-260 200-260s182 100 200 260" fill="#3a3f48"/>
+  <path d="M160 790c18-160 104-260 200-260s182 100 200 260" fill="none" stroke="#535b66" stroke-width="12"/>
+  <text x="360" y="322" fill="#17191d" font-family="Arial, sans-serif" font-size="88" font-weight="700" text-anchor="middle">IP</text>
+  <text x="360" y="846" fill="#c3c8d0" font-family="Arial, sans-serif" font-size="30" text-anchor="middle">Replace with your photo</text>
+</svg>

@@ -1,4 +1,8 @@
 _site/
+__pycache__/
 .sass-cache/
+scratch/
 .jekyll-cache/
 .jekyll-metadata
+assets/bootstrap/
+main.old.py

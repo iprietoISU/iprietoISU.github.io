@@ -1,38 +1,42 @@
-from flask import Flask, render_template
+from pathlib import Path
 
-app = Flask(__name__, template_folder='.', static_folder='.')
+from flask import Flask, abort, send_from_directory
 
-@app.route('/index.html')
+
+SITE_ROOT = Path(__file__).resolve().parent / "_site"
+
+app = Flask(__name__, static_folder=None)
+
+
+@app.route("/")
 def home():
-    return render_template('index.html')
+    return send_site_file("index.html")
 
-@app.route('/cr.html')
-def cr():
-    return render_template('cr.html')
 
-@app.route('/ethics-statement.html')
-def ethics_statement():
-    return render_template('ethics-statement.html')
+@app.route("/<path:requested_path>")
+def site_file(requested_path):
+    path = requested_path.strip("/")
 
-@app.route('/ger.html')
-def ger():
-    return render_template('ger.html')
+    if not path:
+        path = "index.html"
 
-@app.route('/past-work.html')
-def past_work():
-    return render_template('past-work.html')
+    if "." not in Path(path).name:
+        path = f"{path}.html"
 
-@app.route('/projects.html')
-def projects():
-    return render_template('projects.html')
+    return send_site_file(path)
 
-@app.route('/resume.html')
-def resume():
-    return render_template('resume.html')
 
-@app.route("/assets/css/styles.css")
-def styles():
-    return render_template('assets/css/styles.css')
+def send_site_file(path):
+    target = (SITE_ROOT / path).resolve()
 
-if __name__ == '__main__':
+    if SITE_ROOT not in target.parents and target != SITE_ROOT:
+        abort(404)
+
+    if not target.is_file():
+        abort(404)
+
+    return send_from_directory(SITE_ROOT, path)
+
+
+if __name__ == "__main__":
     app.run(debug=True, port=5000)

@@ -1,6 +1,9 @@
 ---
 ---
 
+@import "../bootstrap/scss/bootstrap";
+
+
 $portfolio-primary: #9ec5fe;
 $portfolio-bg: #24272c;
 $portfolio-panel: #30343b;
@@ -55,7 +58,7 @@ html {
 
 body {
   min-height: 100vh;
-  padding-top: 76px;
+  padding-top: 0;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
 }
@@ -74,17 +77,54 @@ a {
   letter-spacing: 0.02em;
 }
 
-.navbar {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.24);
+.navbar.navbar-dark-shadow {
+  background-color: var(--bs-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0.25rem 0.5rem rgba(0, 0, 0, 0.36),
+    0 1rem 2.25rem rgba(0, 0, 0, 0.42) !important;
+  z-index: 1040;
+}
+
+.page-main {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .hero {
+  align-items: center;
   background:
     linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.12) 0%, rgba(var(--bs-dark-rgb), 0) 42%),
     var(--bs-secondary-bg);
   border: 1px solid var(--bs-border-color);
   border-radius: 0.5rem;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
   padding: clamp(2rem, 5vw, 4rem);
+}
+
+.hero-content {
+  max-width: 42rem;
+}
+
+.hero-photo-wrap {
+  justify-self: end;
+  padding: clamp(0.5rem, 2vw, 1rem);
+}
+
+.hero-photo {
+  aspect-ratio: 4 / 5;
+  background-color: var(--portfolio-panel-soft);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 0.125rem 0.375rem rgba(0, 0, 0, 0.2),
+    0 1rem 2rem rgba(0, 0, 0, 0.24);
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  width: min(100%, 18rem);
 }
 
 .eyebrow {
@@ -274,6 +314,23 @@ a {
 }
 
 @media (max-width: 767.98px) {
+  .page-main {
+    padding-top: 1.5rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo-wrap {
+    justify-self: start;
+    padding: 0;
+  }
+
+  .hero-photo {
+    width: min(100%, 14rem);
+  }
+
   .presentation-grid {
     display: block;
     grid-template-columns: 1fr;
