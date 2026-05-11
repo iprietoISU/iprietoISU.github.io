@@ -1,18 +1,19 @@
 ---
 ---
 
-@import "../bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 
-$portfolio-primary: #9ec5fe;
-$portfolio-bg: #24272c;
-$portfolio-panel: #30343b;
-$portfolio-panel-soft: #3a3f48;
-$portfolio-text: #e9ecef;
-$portfolio-muted: #c3c8d0;
-$portfolio-border: #535b66;
-$portfolio-link: #b6d4fe;
-$portfolio-link-hover: #d9e9ff;
+$portfolio-primary: #496275;
+$portfolio-bg: #1f2023;
+$portfolio-panel: #2a2b2f;
+$portfolio-panel-soft: #33353a;
+$portfolio-nav: #25262a;
+$portfolio-text: #f0eee9;
+$portfolio-muted: #dedbd3;
+$portfolio-border: #45474d;
+$portfolio-link: #d6e3ec;
+$portfolio-link-hover: #ffffff;
 $resume-paper: #f4f5f7;
 $resume-ink: #17191d;
 $resume-muted: #343842;
@@ -23,30 +24,31 @@ $resume-rule: #c7ccd4;
   --brand-color: #{$portfolio-primary};
   --portfolio-panel: #{$portfolio-panel};
   --portfolio-panel-soft: #{$portfolio-panel-soft};
+  --portfolio-nav: #{$portfolio-nav};
 
   --bs-body-bg: #{$portfolio-bg};
-  --bs-body-bg-rgb: 36, 39, 44;
+  --bs-body-bg-rgb: 31, 32, 35;
   --bs-body-color: #{$portfolio-text};
-  --bs-body-color-rgb: 233, 236, 239;
+  --bs-body-color-rgb: 240, 238, 233;
   --bs-secondary-color: #{$portfolio-muted};
-  --bs-secondary-color-rgb: 195, 200, 208;
+  --bs-secondary-color-rgb: 222, 219, 211;
   --bs-secondary-bg: #{$portfolio-panel};
-  --bs-secondary-bg-rgb: 48, 52, 59;
+  --bs-secondary-bg-rgb: 42, 43, 47;
   --bs-tertiary-bg: #{$portfolio-panel-soft};
-  --bs-tertiary-bg-rgb: 58, 63, 72;
+  --bs-tertiary-bg-rgb: 51, 53, 58;
   --bs-emphasis-color: #f8f9fa;
   --bs-emphasis-color-rgb: 248, 249, 250;
   --bs-border-color: #{$portfolio-border};
-  --bs-border-color-rgb: 83, 91, 102;
+  --bs-border-color-rgb: 69, 71, 77;
   --bs-link-color: #{$portfolio-link};
-  --bs-link-color-rgb: 182, 212, 254;
+  --bs-link-color-rgb: 214, 227, 236;
   --bs-link-hover-color: #{$portfolio-link-hover};
-  --bs-link-hover-color-rgb: 217, 233, 255;
+  --bs-link-hover-color-rgb: 255, 255, 255;
   --bs-primary: #{$portfolio-primary};
-  --bs-primary-rgb: 158, 197, 254;
-  --bs-primary-bg-subtle: #1e344f;
-  --bs-primary-border-subtle: #4c78b1;
-  --bs-primary-text-emphasis: #d6e6ff;
+  --bs-primary-rgb: 73, 98, 117;
+  --bs-primary-bg-subtle: #263946;
+  --bs-primary-border-subtle: #6f8496;
+  --bs-primary-text-emphasis: #d6e3ec;
   --bs-dark: #212529;
   --bs-dark-rgb: 33, 37, 41;
 }
@@ -78,11 +80,11 @@ a {
 }
 
 .navbar.navbar-dark-shadow {
-  background-color: var(--bs-dark) !important;
+  background-color: var(--portfolio-nav) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow:
-    0 0.25rem 0.5rem rgba(0, 0, 0, 0.36),
-    0 1rem 2.25rem rgba(0, 0, 0, 0.42) !important;
+    0 0.25rem 0.625rem rgba(0, 0, 0, 0.28),
+    0 0.875rem 1.75rem rgba(0, 0, 0, 0.3) !important;
   z-index: 1040;
 }
 
@@ -200,6 +202,22 @@ a {
 
   p {
     color: var(--bs-secondary-color);
+  }
+}
+
+.capstone-feature {
+  background:
+    linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.16) 0%, rgba(var(--bs-primary-rgb), 0.04) 42%, rgba(var(--bs-primary-rgb), 0) 72%),
+    var(--portfolio-panel-soft);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
   }
 }
 

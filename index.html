@@ -1,65 +1,39 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Isaac Prieto | Home</title>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-shadow bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Isaac Prieto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-            <li class="nav-item"><a class="nav-link" href="past-work.html">Past Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="ger.html">G.E.R.</a></li>
-            <li class="nav-item"><a class="nav-link" href="cr.html">C.R.</a></li>
-            <li class="nav-item"><a class="nav-link" href="ethics-statement.html">Ethics Statement</a></li>
-          </ul>
-        </div>
+---
+layout: default
+title: Home
+---
+
+<main class="container page-main">
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Indelisio "Indy" S. Prieto's Engineering Portfolio</p>
+      <h1 class="display-4 fw-bold">Indy Prieto</h1>
+      <p class="lead mt-3">The world gets faster paced every day. Keeping on the current of innovation is a necessity,
+        as the bleeding edge of today is tomorrow's competitive standard. It's a place that requires quick adaptation,
+        creative thinking, and a can-do attitude. That's where I thrive.
+
+        A master's student in Cybersecurity Engineering with a love for creative problem solving, I come from a software
+        engineering background, and can easily adapt to any challenge.</p>
+
+      <div class="contact-strip mt-4" aria-label="Contact information">
+        <a href="mailto:iprieto@iastate.edu">iprieto@iastate.edu</a>
+        <span>Ames, IA</span>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/iprietoISU" target="_blank" rel="noreferrer">GitHub</a>
       </div>
-    </nav>
+    </div>
 
-    <main class="container page-main">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">Engineering Portfolio</p>
-          <h1 class="display-4 fw-bold">Isaac Prieto</h1>
-          <p class="lead mt-3">Engineering student focused on research, systems thinking, and practical technical work that connects lab knowledge to useful outcomes.</p>
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="assets/profileshot_edit.jpg"
+        alt="Black and White portrait of Indy Prieto at ISU's Arboretum" />
+    </div>
+  </section>
 
-          <div class="contact-strip mt-4" aria-label="Contact information">
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-            <span>Ames, IA</span>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/iprietoISU" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        <div class="hero-photo-wrap">
-          <img class="hero-photo" src="assets/profile-photo.svg" alt="Portrait placeholder for Isaac Prieto" />
-        </div>
-      </section>
-
-      <section class="page-panel mt-4">
-        <h2 class="section-title">Career Objective</h2>
-        <p class="impact-statement">To build a career at the intersection of research, engineering design, and resilient technology, contributing to projects where careful analysis, hands-on problem solving, and ethical judgment lead to measurable improvements in the real world.</p>
-      </section>
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="assets/js/navigation.js"></script>
-  </body>
-</html>
+  <section class="page-panel mt-4">
+    <h2 class="section-title">Career Objective</h2>
+    <p class="impact-statement">One of my favorite things in life is being presented with a challenge that I would find
+      out of my depth and requires new ways of thinking. I hope to make a career out of tackling these challenges. In
+      short, I seek to define the next generation of engineering solutions, no matter the field, and no matter how
+      improbable. </p>
+  </section>
+</main>

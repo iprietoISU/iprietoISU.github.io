@@ -1,5 +1,6 @@
 _site/
 __pycache__/
+.conda/
 .sass-cache/
 scratch/
 .jekyll-cache/

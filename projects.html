@@ -1,103 +1,99 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Isaac Prieto | Projects</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Isaac Prieto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-            <li class="nav-item"><a class="nav-link" href="past-work.html">Past Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="ger.html">G.E.R.</a></li>
-            <li class="nav-item"><a class="nav-link" href="cr.html">C.R.</a></li>
-            <li class="nav-item"><a class="nav-link" href="ethics-statement.html">Ethics Statement</a></li>
-          </ul>
-        </div>
+---
+layout: default
+title: Projects
+---
+
+<main class="container py-5">
+  <article class="page-panel">
+    <h1 class="section-title">Projects</h1>
+
+    <section class="entry-block capstone-feature">
+      <h2>Capstone: SatiLLM</h2>
+      <h3>Description</h3>
+      <p>An exploratory project from Argonne National Laboratory's Applied Security Head, focusing on the possibility of
+        using LLMs for identifying anomalous space conditions. The project existed in two haves, one focusing on ns-3
+        satellite simulation and the other on LLM integration.</p>
+      <h3>How I Contributed</h3>
+      <p>I headed the AI side of the project, devising an appropriate setup that used cutting edge models and
+        techniques. I eventually designed and implemented a decentralized RAG-equipped Agentic AI using a custom backend
+        adapter, using the then-new ChatGPT-OSS 20B as our model. By doing this, I was able to leverage existing
+        resources to successfully design the system using none of our project budget, with the setup being lightweight
+        enough to run off my laptop and an old workstation card by effectively distributing the load placed on system
+        resources.</p>
+      <h3>Skills and Knowledge Gained</h3>
+      <p>Agentic AI [dspy], RAG [ColBERT v2], Multi-System Orchestration, AI Backend Development [HyperLocal]</p>
+      <h3>Documents</h3>
+      <ul class="link-list">
+        <li><a href="#">Project proposal</a></li>
+        <li><a href="#">Design report</a></li>
+        <li><a href="#">Final presentation</a></li>
+        <li><a href="#">Local agent execution adapter</a></li>
+      </ul>
+      <h3>Big Picture</h3>
+      <p>This project shows how technical design work becomes stronger when it is tied to a clear need, realistic
+        constraints, and responsible decision making.</p>
+    </section>
+
+    <section class="entry-block">
+      <h2>Projects</h2>
+
+      <div class="project-subsection">
+        <h3>Real-Life RE2 Electronic Lockbox Puzzle [Digital Logic Class Project]</h3>
+        <h4>Description</h4>
+        <p>Having recently gone through the classic game's remaster, I was inspired to create a physical version of it's
+          Lockbox puzzle. By using an FPGA, I was able to bring this puzzle into reality, using a similar LED indicator
+          mechanism as well as the ability to alter the solution without needing to reprogram the board, by using a
+          series of button inputs with an 7-segment display.</p>
+        <h4>Skills and Knowledge Gained</h4>
+        <p>Rapid prototyping, FSM design, FPGA Programming</p>
+        <h4>Resources Used</h4>
+        <p>Intel Quartus Prime, Altera DE2-115 Development Board [Cyclone IV FPGA], Falstad Circuit Sim, Game References
+        </p>
       </div>
-    </nav>
 
-    <main class="container py-5">
-      <article class="page-panel">
-        <h1 class="section-title">Projects</h1>
+      <div class="project-subsection">
+        <h3>G24 Seashell</h3>
+        <h4>Description</h4>
+        <p>A technical or creative project centered on the G24 Seashell concept, with space to describe the purpose,
+          audience, and final result.</p>
+        <h4>How I Contributed</h4>
+        <p>Document the design decisions, technical work, coordination, implementation, or analysis that you personally
+          completed.</p>
+        <h4>Skills and Knowledge Gained</h4>
+        <p>Design communication, problem decomposition, applied technical research, testing, and project refinement.</p>
+        <h4>Resources Used</h4>
+        <p>Project notes, reference designs, software tools, technical documentation, and peer or mentor feedback.</p>
+      </div>
 
-        <section class="entry-block">
-          <h2>Senior Design</h2>
-          <h3>Description</h3>
-          <p>A capstone engineering project focused on defining a real problem, developing a solution path, testing assumptions, and delivering a documented design.</p>
-          <h3>How I Contributed</h3>
-          <p>Describe your role in research, design decisions, prototyping, testing, analysis, documentation, and team coordination.</p>
-          <h3>Skills and Knowledge Gained</h3>
-          <p>Engineering design process, project planning, communication with stakeholders, technical documentation, testing discipline, and team accountability.</p>
-          <h3>Documents</h3>
-          <ul class="link-list">
-            <li><a href="#">Project proposal</a></li>
-            <li><a href="#">Design report</a></li>
-            <li><a href="#">Final presentation</a></li>
-          </ul>
-          <h3>Big Picture</h3>
-          <p>This project shows how technical design work becomes stronger when it is tied to a clear need, realistic constraints, and responsible decision making.</p>
-        </section>
+      <div class="project-subsection">
+        <h3>WeirdHouse</h3>
+        <h4>Description</h4>
+        <p>A creative technical project with an unusual house concept, useful for showing experimentation, systems
+          thinking, or interactive design.</p>
+        <h4>How I Contributed</h4>
+        <p>Explain your role in concept development, implementation, testing, asset creation, documentation, or
+          presentation.</p>
+        <h4>Skills and Knowledge Gained</h4>
+        <p>Creative problem solving, interface or environment design, debugging, iteration, and communicating
+          unconventional ideas clearly.</p>
+        <h4>Resources Used</h4>
+        <p>Design references, code or modeling tools, sketches, build notes, and external learning resources.</p>
+      </div>
 
-        <section class="entry-block">
-          <h2>Projects</h2>
-
-          <div class="project-subsection">
-            <h3>Real-Life RE2 Locker Puzzle</h3>
-            <h4>Description</h4>
-            <p>A physical or interactive puzzle inspired by the Resident Evil 2 locker puzzle, built to translate a game mechanic into a real-world experience.</p>
-            <h4>How I Contributed</h4>
-            <p>Designed the puzzle structure, planned the interaction flow, and connected the theme to practical construction or implementation choices.</p>
-            <h4>Skills and Knowledge Gained</h4>
-            <p>Rapid prototyping, user experience thinking, puzzle logic, fabrication planning, and iteration from testing.</p>
-            <h4>Resources Used</h4>
-            <p>Game references, design sketches, prototype materials, documentation tools, and testing feedback.</p>
-          </div>
-
-          <div class="project-subsection">
-            <h3>G24 Seashell</h3>
-            <h4>Description</h4>
-            <p>A technical or creative project centered on the G24 Seashell concept, with space to describe the purpose, audience, and final result.</p>
-            <h4>How I Contributed</h4>
-            <p>Document the design decisions, technical work, coordination, implementation, or analysis that you personally completed.</p>
-            <h4>Skills and Knowledge Gained</h4>
-            <p>Design communication, problem decomposition, applied technical research, testing, and project refinement.</p>
-            <h4>Resources Used</h4>
-            <p>Project notes, reference designs, software tools, technical documentation, and peer or mentor feedback.</p>
-          </div>
-
-          <div class="project-subsection">
-            <h3>WeirdHouse</h3>
-            <h4>Description</h4>
-            <p>A creative technical project with an unusual house concept, useful for showing experimentation, systems thinking, or interactive design.</p>
-            <h4>How I Contributed</h4>
-            <p>Explain your role in concept development, implementation, testing, asset creation, documentation, or presentation.</p>
-            <h4>Skills and Knowledge Gained</h4>
-            <p>Creative problem solving, interface or environment design, debugging, iteration, and communicating unconventional ideas clearly.</p>
-            <h4>Resources Used</h4>
-            <p>Design references, code or modeling tools, sketches, build notes, and external learning resources.</p>
-          </div>
-        </section>
-      </article>
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="assets/js/navigation.js"></script>
-  </body>
-</html>
+      <div class="project-subsection">
+        <h3>This Portfolio</h3>
+        <h4>Description</h4>
+        <p>I wanted to create an appealing website to showcase my work and skills, and I wanted to start integrating AI
+          more into my pipeline.</p>
+        <h4>How I Contributed</h4>
+        <p>With AI-assisted Pair Programming, I was able to create a full-featured website in an unfamiliar framework,
+          with both front-end and back-end components. I accomplished this within the space of a few hours.</p>
+        <h4>Skills and Knowledge Gained</h4>
+        <p>Practical Bootstrap fundamentals, Identifying opportunities for AI integration, limits of AI assistance,
+          token usage management.</p>
+        <h4>Resources Used</h4>
+        <p>VS Code, AI Pair Programming [Codex], Color Theory, Ruby Tooling, HTML5, Flask, Bootstrap</p>
+      </div>
+    </section>
+  </article>
+</main>
