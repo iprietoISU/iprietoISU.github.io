@@ -6,3 +6,4 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4"
 gem "bootstrap", "5.3.8"
+gem "jekyll-purgecss"

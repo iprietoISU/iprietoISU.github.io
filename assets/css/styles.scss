@@ -267,21 +267,28 @@ a {
 }
 
 .resume-sheet {
-  background-color: $resume-paper;
+  background-color: #ffffff;
   color: $resume-ink;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.12rem;
+  line-height: 1.12;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: clamp(2rem, 5vw, 3.75rem);
 }
 
 .resume-header {
-  border-bottom: 2px solid $resume-ink;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
-  text-align: center;
+  border-bottom: 0;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0;
+  text-align: left;
 
   h1 {
-    font-size: 2rem;
-    letter-spacing: 0.04em;
-    margin-bottom: 0.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0.2rem;
     text-transform: uppercase;
   }
 }
@@ -289,45 +296,70 @@ a {
 .resume-header p,
 .resume-section p,
 .resume-section li {
-  color: $resume-muted;
+  color: #000000;
+}
+
+.resume-header p,
+.resume-section p {
+  margin-bottom: 0;
 }
 
 .resume-section {
-  border-bottom: 1px solid $resume-rule;
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
+  border-bottom: 0;
+  margin-bottom: 1.55rem;
+  padding-bottom: 0;
 
   &:last-child {
-    border-bottom: 0;
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   h2 {
+    border-bottom: 2px solid #000000;
     color: #111318;
-    font-size: 1rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.75rem;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0.35rem;
     text-transform: uppercase;
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 2rem;
+  }
+
+  a {
+    color: #0000ee;
   }
 }
 
 .resume-item {
+  align-items: baseline;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  margin-top: 0.15rem;
 
   h3 {
-    font-size: 1rem;
+    color: #000000;
+    font-size: 1.12rem;
     font-weight: 700;
-    margin-bottom: 0.15rem;
+    line-height: 1.12;
+    margin-bottom: 0;
+
+    span {
+      font-weight: 400;
+      white-space: normal;
+    }
   }
 
-  p,
-  span {
-    font-style: italic;
-    margin-bottom: 0.35rem;
+  > span {
+    color: #000000;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    text-align: right;
+    white-space: nowrap;
   }
 }
 
@@ -361,5 +393,11 @@ a {
   .resume-item {
     display: block;
     grid-template-columns: 1fr;
+
+    > span {
+      display: inline;
+      text-align: left;
+      white-space: normal;
+    }
   }
 }

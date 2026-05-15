@@ -3,6 +3,7 @@ __pycache__/
 .conda/
 .sass-cache/
 scratch/
+node_modules/
 .jekyll-cache/
 .jekyll-metadata
 assets/bootstrap/

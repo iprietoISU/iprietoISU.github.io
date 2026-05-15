@@ -1,3 +1,8 @@
+plugins:
+  - jekyll-purgecss
+
+css_dir: assets/css
+
 sass:
   sass_dir: assets/css
   style: compressed
